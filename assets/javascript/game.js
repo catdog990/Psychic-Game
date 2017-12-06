@@ -6,9 +6,11 @@ var computerChoices = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","
 	var GuessesLeft = 9;
 	var currentGuess = 0;
 //***function runs whenever a key is pressed***///
+if(gameOver == false){
 	document.onkeyup = function(event){
 
 		var userGuess = event.key;
+
 //***might need to go abouve onkeyup**//
 		var computerGuess = computerChoices[Math.floor(Math. random() * computerChoices.length)];
 
@@ -23,7 +25,15 @@ var computerChoices = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","
 			gameOver=true;
 		}
 
-
+		if((gameOver)){
+			losses++
+			GuessesLeft===9
 		}
 
 
+		}
+
+	}
+
+///write span and give it an id, then var whatever = document.getElementbyID(id of span);
+//then whatever.innerHtml = userGuess
