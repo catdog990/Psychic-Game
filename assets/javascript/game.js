@@ -11,7 +11,7 @@ if(gameOver == false){
 
 		var userGuess = event.key;
 
-//***might need to go abouve onkeyup**//
+//***might need to go above onkeyup**//
 		var computerGuess = computerChoices[Math.floor(Math. random() * computerChoices.length)];
 
 		if((userGuess === computerGuess)){
